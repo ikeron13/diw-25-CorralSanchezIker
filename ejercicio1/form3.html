@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Encuesta de satisfacción</title>
+</head>
+<body>
+
+<h2>Encuesta</h2>
+
+<form>
+
+    Nombre:<br>
+    <input type="text" required><br><br>
+
+    Edad:<br>
+    <input type="number" min="18" max="100" required><br><br>
+
+    Fecha de visita:<br>
+    <input type="date" required><br><br>
+
+    Calificación general:<br>
+    <input type="range" min="1" max="10" value="5"
+           oninput="valor.value=this.value">
+    <output name="valor">5</output><br><br>
+
+    Servicios utilizados:<br>
+    <input type="checkbox"> Restaurante
+    <input type="checkbox"> Spa
+    <input type="checkbox"> Gimnasio
+    <input type="checkbox"> Piscina<br><br>
+
+    Comentarios adicionales:<br>
+    <textarea></textarea><br><br>
+
+    Color favorito:<br>
+    <input type="color"><br><br>
+
+    <input type="submit" value="Enviar">
+    <input type="reset" value="Restablecer">
+
+</form>
+
+</body>
+</html>

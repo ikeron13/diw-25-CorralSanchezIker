@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Contacto</title>
+</head>
+<body>
+
+<h2>Formulario ej2</h2>
+
+<form>
+
+    Nombre:<br>
+    <input type="text" required><br><br>
+
+    Correo electrónico:<br>
+    <input type="email" required><br><br>
+
+    Teléfono:<br>
+    <input type="tel" pattern="[0-9]{9}"><br><br>
+
+    Asunto:<br>
+    <select>
+        <option>Consulta</option>
+        <option>Sugerencia</option>
+        <option>Reclamo</option>
+    </select><br><br>
+
+    Mensaje:<br>
+    <textarea required></textarea><br><br>
+
+    <input type="hidden" value="token123">
+
+    <button type="submit">Enviar</button>
+    <button type="reset">Restablecer</button>
+
+</form>
+
+</body>
+</html>
