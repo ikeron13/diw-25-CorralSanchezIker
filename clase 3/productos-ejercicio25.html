@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Lista de Productos</title>
+
+<style>
+/* ===================== */
+/* VARIABLES CSS */
+/* ===================== */
+:root {
+    --color-fondo-par: #f2f2f2;
+    --color-fondo-impar: #ffffff;
+    --color-texto: #333;
+    --color-hover: #dfe6e9;
+    --espacio-base: 10px;
+
+    /* Precios */
+    --precio-original: 100;
+    --precio-descuento: 70;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eee;
+    padding: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    max-width: 400px;
+    margin: auto;
+}
+
+/* ===================== */
+/* PRODUCTOS */
+/* ===================== */
+li {
+    padding: var(--espacio-base);
+    margin-bottom: 10px;
+    border-radius: 5px;
+    position: relative;
+    transition: box-shadow 0.3s;
+}
+
+/* Alternar fondos */
+li:nth-child(odd) {
+    background-color: var(--color-fondo-impar);
+}
+
+li:nth-child(even) {
+    background-color: var(--color-fondo-par);
+}
+
+/* Sombra al pasar el cursor */
+li:hover {
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    background-color: var(--color-hover);
+}
+
+/* Productos disponibles (NO agotados) */
+li:not(.agotado) {
+    border-left: 5px solid green;
+}
+
+/* ===================== */
+/* NUEVO - ::before */
+/* ===================== */
+.nuevo::before {
+    content: "🆕 Nuevo ";
+    color: blue;
+    font-weight: bold;
+}
+
+/* ===================== */
+/* AGOTADO - ::after */
+/* ===================== */
+.agotado::after {
+    content: " AGOTADO";
+    color: red;
+    font-weight: bold;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+/* ===================== */
+/* DESCRIPCIÓN */
+/* ===================== */
+.descripcion::first-line {
+    font-weight: bold;
+    color: var(--color-texto);
+}
+
+/* ===================== */
+/* PRECIOS */
+/* ===================== */
+.precio-original {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.precio-descuento {
+    color: green;
+    font-weight: bold;
+}
+</style>
+</head>
+
+<body>
+
+<h2>Lista de Productos</h2>
+
+<ul>
+
+    <!-- Producto 1: Disponible -->
+    <li>
+        <p class="descripcion">Producto 1<br>Excelente calidad para uso diario.</p>
+        <p>
+            <span class="precio-original">$100</span>
+            <span class="precio-descuento">$70</span>
+        </p>
+    </li>
+
+    <!-- Producto 2: Agotado -->
+    <li class="agotado">
+        <p class="descripcion">Producto 2<br>No disponible por el momento.</p>
+        <p>
+            <span class="precio-original">$100</span>
+        </p>
+    </li>
+
+    <!-- Producto 3: Nuevo -->
+    <li class="nuevo">
+        <p class="descripcion">Producto 3<br>Último modelo recién llegado.</p>
+        <p>
+            <span class="precio-original">$100</span>
+            <span class="precio-descuento">$70</span>
+        </p>
+    </li>
+
+    <!-- Producto 4: Disponible -->
+    <li>
+        <p class="descripcion">Producto 4<br>Ideal para principiantes.</p>
+        <p>
+            <span class="precio-original">$100</span>
+            <span class="precio-descuento">$70</span>
+        </p>
+    </li>
+
+</ul>
+
+</body>
+</html>

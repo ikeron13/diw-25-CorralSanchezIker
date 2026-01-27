@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Tarjeta de Perfil</title>
+
+    <style>
+        
+        /* VARIABLES CSS */
+        
+        :root {
+            --color-primario: #3498db;
+            --color-secundario: #2ecc71;
+            --color-fondo: #f2f2f2;
+            --color-texto: #333;
+            --espacio-base: 10px;
+        }
+
+        body {
+            background-color: var(--color-fondo);
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        
+        /* TARJETA */
+        
+        .tarjeta {
+            background-color: white;
+            width: 300px;
+            padding: var(--espacio-base);
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            transition: background-color 0.3s;
+        }
+
+        /* Pseudoclase hover en tarjeta */
+        .tarjeta:hover {
+            background-color: var(--color-secundario);
+        }
+
+        img {
+            width: 100px;
+            border-radius: 50%;
+        }
+
+        
+        /* NOMBRE CON ::before */
+        
+        h2::before {
+            content: "👤 ";
+        }
+
+        
+        /* BIOGRAFÍA */
+        
+        p {
+            color: var(--color-texto);
+        }
+
+        /* Resaltar primera letra */
+        p::first-letter {
+            font-size: 24px;
+            font-weight: bold;
+            color: var(--color-primario);
+        }
+
+        
+        /* ENLACES */
+        
+        a {
+            color: var(--color-primario);
+            text-decoration: none;
+        }
+
+        /* Subrayado solo al pasar el cursor */
+        a:hover {
+            text-decoration: underline;
+        }
+
+        
+        /* BOTÓN */
+        
+        button {
+            background-color: var(--color-primario);
+            color: white;
+            border: none;
+            padding: var(--espacio-base);
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: var(--espacio-base);
+            position: relative;
+        }
+
+        /* Cambiar color al hacer clic */
+        button:active {
+            background-color: var(--color-secundario);
+        }
+
+        /* Flecha después del botón */
+        button::after {
+            content: " ➜";
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="tarjeta">
+        <img src="https://via.placeholder.com/100" alt="Foto de perfil">
+
+        <h2>Juan Pérez</h2>
+
+        <p>Desarrollador web apasionado por la tecnología y el código abierto.</p>
+
+        <a href="#">Ver perfil</a>
+
+        <br><br>
+
+        <button>Seguir</button>
+    </div>
+
+</body>
+</html>

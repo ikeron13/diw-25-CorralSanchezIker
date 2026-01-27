@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Botones con BEM</title>
+  <style>
+    .btn {
+      padding: 10px 18px;
+      border-radius: 6px;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      cursor: pointer;
+      border: 2px solid transparent;
+      background: transparent;
+    }
+
+    /* Modificadores de color */
+    .btn--blue { color: #0d6efd; border-color: #0d6efd; }
+    .btn--orange { color: #fd7e14; border-color: #fd7e14; }
+    .btn--red { color: #dc3545; border-color: #dc3545; }
+
+    /* Modificadores de tipo */
+    .btn--solid { color: white; }
+    .btn--solid.btn--blue { background: #0d6efd; }
+    .btn--solid.btn--orange { background: #fd7e14; }
+    .btn--solid.btn--red { background: #dc3545; }
+
+    .btn--outline { background: white; }
+
+    .btn--link {
+      border: none;
+      padding: 0;
+      background: none;
+      text-decoration: underline;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, auto);
+      gap: 12px 24px;
+      align-items: center;
+    }
+  </style>
+</head>
+<body>
+
+<div class="grid">
+  <!-- Azul -->
+  <button class="btn btn--solid btn--blue">Más información</button>
+  <button class="btn btn--outline btn--blue">Más información</button>
+  <button class="btn btn--link btn--blue">Más información</button>
+
+  <!-- Naranja -->
+  <button class="btn btn--solid btn--orange">Más información</button>
+  <button class="btn btn--outline btn--orange">Más información</button>
+  <button class="btn btn--link btn--orange">Más información</button>
+
+  <!-- Rojo -->
+  <button class="btn btn--solid btn--red">Más información</button>
+  <button class="btn btn--outline btn--red">Más información</button>
+  <button class="btn btn--link btn--red">Más información</button>
+</div>
+
+</body>
+</html>
