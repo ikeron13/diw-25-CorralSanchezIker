@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Ejercicio 33</title>
+
+<style>
+.contenedor {
+position: relative;
+width: 300px;
+height: 200px;
+border: 1px solid #333;
+margin: 50px;
+}
+
+.caja {
+position: absolute;
+width: 80px;
+height: 80px;
+border-radius: 5px;
+}
+
+.roja {
+background-color: red;
+top: 60px;
+left: 80px;
+z-index: 3;
+}
+
+.verde {
+background-color: green;
+top: 40px;
+left: 60px;
+z-index: 2;
+}
+
+.azul {
+background-color: blue;
+top: 20px;
+left: 40px;
+z-index: 1;
+}
+</style>
+</head>
+
+<body>
+
+<h3>cajas apiladas</h3>
+
+<div class="contenedor">
+<div class="caja azul">hola</div>
+<div class="caja verde">adios</div>
+<div class="caja roja">hastalue</div>
+</div>
+
+</body>
+</html>

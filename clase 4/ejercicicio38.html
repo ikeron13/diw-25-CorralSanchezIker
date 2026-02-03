@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Centrar con Flexbox</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+        
+        .contenedor {
+            height: 100vh;
+            background-color: rgb(248, 248, 248);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .elemento {
+            background-color: rgb(242, 30, 30);
+            padding: 40px;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 24px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="elemento">
+            MAKAKO<br>
+        </div>
+    </div>
+</body>
+</html>

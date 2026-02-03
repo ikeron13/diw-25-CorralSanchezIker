@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Precios</title>
+    <style>
+        .precios {
+            display: flex;
+            gap: 20px;
+            padding: 20px;
+        }
+        
+        .plan {
+            border: 1px solid gray;
+            padding: 20px;
+            text-align: center;
+            flex: 1;
+        }
+        
+        .destacado {
+            border: 2px solid blue;
+            background: lightblue;
+        }
+        
+        .titulo {
+            font-weight: bold;
+            font-size: 20px;
+        }
+        
+        .precio {
+            font-size: 24px;
+            margin: 10px 0;
+        }
+        
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 15px 0;
+        }
+        
+        button {
+            background: blue;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="precios">
+        <div class="plan">
+            <div class="titulo">Básico</div>
+            <div class="precio">$10</div>
+            <ul>
+                <li>Característica 1</li>
+                <li>Característica 2</li>
+            </ul>
+            <button>Elegir</button>
+        </div>
+        
+        <div class="plan destacado">
+            <div class="titulo">Profesional</div>
+            <div class="precio">$20</div>
+            <ul>
+                <li>Característica 1</li>
+                <li>Característica 2</li>
+                <li>Característica 3</li>
+            </ul>
+            <button>Elegir</button>
+        </div>
+        
+        <div class="plan">
+            <div class="titulo">Empresarial</div>
+            <div class="precio">$50</div>
+            <ul>
+                <li>Característica 1</li>
+                <li>Característica 2</li>
+                <li>Característica 3</li>
+                <li>Característica 4</li>
+            </ul>
+            <button>Elegir</button>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ejercicio 42</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: Arial;
+            background-color: #0e7c74;
+        }
+        
+        .contenedor {
+            display: flex;
+            gap: 20px;
+        }
+        
+        .izquierda {
+            flex: 2;
+            background: white;
+            padding: 24px;
+        }
+        
+        .derecha {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        
+        .fila {
+            background: white;
+            padding: 24px;
+            border: 1px solid lightgray;
+        }
+        
+        h1, h2 {
+            margin: 0 0 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="izquierda">
+            <h1>Gráfico 2 (punto 1)</h1>
+            <p><strong>Sección 2 (punto 1)</strong></p>
+        </div>
+        
+        <div class="derecha">
+            <div class="fila">
+                <h2>Sección 3 (punto 1)</h2>
+            </div>
+            <div class="fila">
+                <p><strong>Sección 3 (punto 1)</strong></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Galería Flexbox</title>
+    <style>
+        body {
+            font-family: Arial;
+            margin: 20px;
+        }
+        
+        h1 {
+            text-align: center;
+        }
+        
+        .galeria {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+        }
+        
+        .galeria img {
+            width: 200px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 5px;
+            transition: transform 0.3s;
+        }
+        
+        .galeria img:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <h1>Galeria de Imagenes</h1>
+    
+    <div class="galeria">
+        <img src="https://pixabay.com/es/images/download/kangaroo-3843330_1920.jpg" alt="Imagen 1">
+        <img src="https://pixabay.com/es/images/download/white-faced-saki-6232345_1920.jpg" alt="Imagen 2">
+        <img src="https://media.istockphoto.com/id/164006021/es/foto/vista-posterior-de-un-sin-vello-mestizo-sala-de-estar.jpg?s=1024x1024&w=is&k=20&c=bPfpJMe8t68UVmt5Jnlaeu9xSq90qqJWyJWoUysF38U=" alt="Imagen 3">
+        <img src="https://media.istockphoto.com/id/530803356/es/foto/tapir-en-agua.jpg?s=1024x1024&w=is&k=20&c=Qd47be-Krh1sWOEYGywlRHUCz3tdeNTbjvj5jpGFSNY=" alt="Imagen 4">
+        <img src="https://pixabay.com/es/images/download/bonobo-4917396_1920.jpg" alt="Imagen 5">
+        <img src="https://media.istockphoto.com/id/157327515/es/foto/nerd-estudiante-con-gafas-retro-y-rosa-papel-tapiz.jpg?s=1024x1024&w=is&k=20&c=Lw2jTmJ49bBKyMdVLXpUaQ5dzd6JeRmmOHgOJJwtI4Q=" alt="Imagen 6">
+        <img src="https://pixabay.com/es/images/download/zephirx-the-ugly-duchess-6242783_1920.jpg" alt="Imagen 7">
+        <img src="https://media.istockphoto.com/id/157580681/es/foto/payasear-pastel-hombre-retro.jpg?s=1024x1024&w=is&k=20&c=xaG_naO5WMqWthJEwf6Lq5vh2-QxsbE2fYMtHLkUGF4=" alt="Imagen 8">
+        <img src="https://pixabay.com/es/images/download/shaman-431960_1920.jpg" alt="Imagen 9">
+        <img src="https://pixabay.com/es/images/download/ghandi-1267827_1920.jpg" alt="Imagen 10">
+    </div>
+</body>
+</html>
